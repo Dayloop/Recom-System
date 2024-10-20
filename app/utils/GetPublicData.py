@@ -6,7 +6,7 @@ import json
 # 在进行迁移 (makemigration & migrate) 之后，将以下代码取消注释，并删除 return None
 def getAllTravelInfoMapData(province=None):
     def map_fn(item):
-        #item.img_list = json.loads(item.img_list)
+        # item.img_list = json.loads(item.img_list)
         item.comments = json.loads(item.comments)
         return item
 
